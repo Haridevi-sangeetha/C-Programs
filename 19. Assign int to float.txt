@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main(){
+    // 9.Assign int to float
+    int sum ;
+    scanf("%d",&sum);
+    float f = sum;
+    printf("%.2f",f);
+
+    return 0;
+}

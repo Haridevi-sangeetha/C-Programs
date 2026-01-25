@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+    // 7. Subtract two variables
+    int h,i;
+    scanf("%d %d",&h,&i);
+    int sub = h-i;
+    printf("%d\n",sub);
+    return 0;
+}

@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main(){
+    // 14. Print quotient and remainder of two integers.
+    int k,l;
+    scanf("%d %d",&k,&l);
+    int quo = k/l;
+    int rem = k%l;
+    printf("Quotient is %d\n",quo);
+    printf("Reminder is %d",rem);
+    return  0;
+}

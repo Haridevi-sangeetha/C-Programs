@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+    // 12.Print the difference of two integers using -.
+    int g,h;
+    scanf("%d %d",&g,&h);
+    int diff = g-h;
+    printf("%d",diff);
+    return 0;
+}

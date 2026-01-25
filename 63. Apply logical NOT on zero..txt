@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main(){
+    // 3. Apply logical NOT on zero.
+    int a,b;
+    scanf("%d %d",&a,&b);
+    printf("%d\n",(!a));
+    return 0;
+}

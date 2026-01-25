@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main(){
+    // 4.Increment a variable twice and print result.
+    int d;
+    scanf("%d",&d);
+    printf("%d",(d+2));
+    return 0;
+}

@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main(){
+   // 5.Decrement a variable twice and print result.
+    int e;
+    scanf("%d",&e);
+    printf("%d",(e-2));
+    return 0;
+}

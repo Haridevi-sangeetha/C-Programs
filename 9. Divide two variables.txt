@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+    // 9.Divide two variables
+    int l ,m;
+    scanf("%d %d",&l,&m);
+    int div = l/m;
+    printf("%d\n",div);
+    return 0;
+}

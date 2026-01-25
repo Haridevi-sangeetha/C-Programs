@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main(){
+     // 2. Compare two numbers using <.
+    int a,b;
+    scanf("%d %d",&a,&b);
+    printf("%d\n",(a<b));
+    return 0;
+}

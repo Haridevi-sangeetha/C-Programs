@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+    // 6.Add two variables
+    int f,g;
+    scanf("%d %d",&f,&g);
+    int add = f+g;
+    printf("%d\n",add);
+    return 0;
+}

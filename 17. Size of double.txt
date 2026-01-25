@@ -1,0 +1,8 @@
+#include<stdio.h>
+
+int main(){
+    // 7.Size of double
+    double d;
+    printf("%d",sizeof(d));
+    return 0;
+}

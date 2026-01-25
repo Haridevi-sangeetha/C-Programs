@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main(){
+    // 4.Print char variable
+    char ch;
+    scanf("%c",&ch);
+    printf("%c",ch);
+    return 0;
+}

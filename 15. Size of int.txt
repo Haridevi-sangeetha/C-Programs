@@ -1,0 +1,8 @@
+#include<stdio.h>
+
+int main(){
+    // 5.Size of int
+    int a;
+    printf("%d",sizeof(a));
+    return 0;
+}

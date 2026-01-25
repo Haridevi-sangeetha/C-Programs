@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main(){
+    // 1.Apply pre-increment to a variable.
+    int a;
+    scanf("%d",&a);
+    printf("%d",(++a));
+    return 0;
+}

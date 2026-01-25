@@ -1,0 +1,8 @@
+#include<stdio.h>
+
+int main(){
+    // 2.Declare two integer variables and print them
+    int b=10,c=19;
+    printf("%d %d\n",b,c);
+    return 0;
+}

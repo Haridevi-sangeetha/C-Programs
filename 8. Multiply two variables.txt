@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+    // 8. Multiply two variables
+    int j,k;
+    scanf("%d %d",&j,&k);
+    int mul = j*k;
+    printf("%d\n",mul);
+    return 0;
+}

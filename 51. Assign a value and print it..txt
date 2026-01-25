@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+    // 1. Assign a value and print it.
+    int c;
+    scanf("%d",&c);
+    printf("%d\n",c);
+
+    return 0;
+}

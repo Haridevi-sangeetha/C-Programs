@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main(){
+    // 3. Declare a float variable and print it
+    float d,e;
+    scanf("%f %f",&d,&e);
+    printf("%.1f\n%.2f\n",d,e);
+    return 0;
+}

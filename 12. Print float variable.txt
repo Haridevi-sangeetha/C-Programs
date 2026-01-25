@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main(){
+    //2.Print float variable
+    float val;
+    scanf("%f",&val);
+    printf("%f",val);
+    return 0;
+}

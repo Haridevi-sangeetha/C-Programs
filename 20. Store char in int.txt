@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+    // 10.Store char in int
+    char ch2;
+    scanf("%c",&ch2);
+    printf("%d",ch2);
+ 
+    return 0;
+}

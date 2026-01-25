@@ -1,0 +1,10 @@
+#include<sdio.h>
+
+int main(){
+    // 11. Print the sum of two integers using +.
+    int e,f;
+    scanf("%d %d",&e,&f);
+    int add = e+f;
+    printf("%d",add);
+    return 0;
+}

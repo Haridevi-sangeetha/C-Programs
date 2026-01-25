@@ -1,0 +1,8 @@
+#include<stdio.h>
+
+int main(){
+    // 10.Assign value later and print
+    int n=10;
+    printf("%d",n);
+    return 0;
+}

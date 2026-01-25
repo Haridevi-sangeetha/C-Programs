@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main(){
+    // 2.Apply post-increment and print the value.
+    int b;
+    scanf("%d",&b);
+    printf("%d",(b++));
+    return 0;
+}

@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main(){
+    char word[100];
+    char word2[100];
+    scanf("%s %s",word,word2);
+    printf("%s\n%s",word,word2);
+    return 0;
+}

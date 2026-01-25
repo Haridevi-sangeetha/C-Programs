@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main(){
+    // 13. Print the product of two integers using *.
+    int i,j;
+    scanf("%d %d",&i,&j);
+    int mul = i*j;
+    printf("%d",mul);
+
+    return 0;
+}

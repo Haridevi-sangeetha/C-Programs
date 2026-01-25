@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+    // 15.Add three integers and print the result.
+    int m,n,o;
+    scanf("%d %d %d",&m,&n,&o);
+    int sum1 = m+n+o;
+    printf("%d",sum1);
+    return 0;
+}
