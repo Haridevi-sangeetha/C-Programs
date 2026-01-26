@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+    int unit;
+    scanf("%d",&unit);
+    if(unit<=100){
+        printf("%d units -> %d Bill",unit,unit);
+    }
+    else if(unit>100){
+        int cal = (100*1)+((unit-100)*25);
+        printf("%d units -> %d Bill.",unit,cal);
+    }
+    else{
+        printf("Please Enter a Valid units");
+    }
+    return 0;
+}

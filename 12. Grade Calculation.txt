@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(){
+    int mark;
+    scanf("%d",&mark);
+    if(mark>=90 && mark<=100){
+        printf("%d is A",mark);
+    }
+    else if(mark>=75 && mark<90){
+        printf("%d is B",mark);
+    }
+    else{
+        printf("%d is C",mark);
+    }
+    return 0;
+}

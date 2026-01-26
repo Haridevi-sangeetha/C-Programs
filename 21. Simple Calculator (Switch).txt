@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main(){
+    int num1,num2;
+    char op;
+    scanf("%c",&op);
+    switch(op){
+        case '+':
+            scanf("%d %d",&num1,&num2);
+            printf("%d addition.",(num1+num2));
+            break;
+        case '-':
+            scanf("%d %d",&num1,&num2);
+            printf("%d subtraction",(num1-num2));
+            break;
+        case '*':
+            scanf("%d %d",&num1,&num2);
+            printf("%d multiplication",(num1*num2));
+            break;;
+        case '/':
+            scanf("%d %d",&num1,&num2);
+            printf("%d Quotient",(num1/num2));
+            break;
+        case '%':
+            scanf("%d %d",&num1,&num2);
+            printf("%d remainder",(num1%num2));
+            break;
+        default:
+            printf("Enter a valid opration.");
+    }
+    return 0;
+}

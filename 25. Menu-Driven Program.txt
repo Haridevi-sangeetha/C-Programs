@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+int main(){
+    int num1,num2;
+    printf("1.Addition\n");
+    printf("2.Subtraction\n");
+    printf("5.multiplication\n");
+    printf("4.Quotient Division\n");
+    printf("5.Remainder division\n");
+    int op;
+    scanf("%d",&op);
+    switch(op){
+        case 1:
+            scanf("%d %d",&num1,&num2);
+            printf("%d addition.",(num1+num2));
+            break;
+        case 2:
+            scanf("%d %d",&num1,&num2);
+            printf("%d subtraction",(num1-num2));
+            break;
+        case 3:
+            scanf("%d %d",&num1,&num2);
+            printf("%d multiplication",(num1*num2));
+            break;;
+        case 4:
+            scanf("%d %d",&num1,&num2);
+            printf("%d Quotient",(num1/num2));
+            break;
+        case 5:
+            scanf("%d %d",&num1,&num2);
+            printf("%d remainder",(num1%num2));
+            break;
+        default:
+            printf("Enter a valid opration.");
+    }
+    return 0;
+}
