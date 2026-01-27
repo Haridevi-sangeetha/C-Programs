@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int main(){
+    int code ;
+    scanf("%d",&code);
+    int experience ;
+    scanf("%d",&experience);
+    switch(code){
+        case 1:
+            if(experience>=3){
+                int base_salary = (experience*5000)+(50000);
+                printf("Salary : %d ",base_salary);
+            }
+            else {
+                printf("Salary : 5000");
+            }
+            break;
+        case 2:
+            if(experience>=3){
+                int base_salary = (experience*5000)+35000;
+                printf("Salary : %d",base_salary);
+            }
+            else{
+                printf("Salary : 35000");
+            }
+    }
+    return 0;
+}

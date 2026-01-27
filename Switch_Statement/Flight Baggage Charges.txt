@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int fli_cls;
+    scanf("%d",&fli_cls);
+    int weight;
+    scanf("%d",&weight);
+    int cal = weight*300;
+    switch(fli_cls){
+        case  1:
+            printf("%d",cal);
+            break;
+        case 2:
+            if(weight<=3){
+                printf("Free");
+            }
+            else if(weight>3){
+                int cal = (weight-3)*300;
+                printf("%d",cal);
+            }
+    }
+    return 0;
+}

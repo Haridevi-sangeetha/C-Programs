@@ -1,0 +1,25 @@
+include<stdio.h>
+
+int main(){
+    int Ac_type;
+    scanf("%d",&Ac_type);
+    int Bal;
+    scanf("%d",&Bal);
+    int W_Amount;
+    scanf("%d",&W_Amount);
+    switch(Ac_type){
+        case 1:
+           if(W_Amount<=Bal){
+            printf("Transaction Successful");
+           }
+           else{
+            printf("Insufficient Balance");
+           }
+           break;
+        case 2:
+           if(W_Amount>5000){
+            printf("Limit Exceeded");
+           }
+    }
+    return 0;
+}

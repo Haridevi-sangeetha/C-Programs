@@ -1,0 +1,29 @@
+
+#include<stdio.h>
+
+int main(){
+    int plan_type;
+    scanf("%d",&plan_type);
+    int pay_mode;
+    scanf("%d",&pay_mode);
+    switch(plan_type){
+        case 1:
+            if(pay_mode==11){
+                int cal=(199-20);
+                printf("Pay :%d",cal);
+            }
+            else{
+                printf("199");
+            }
+            break;
+        case 2:
+            if(pay_mode == 11){
+                int cal =(399-20);
+                printf("Pay : %d",cal);
+            }
+            else{
+                printf("399");
+            }
+    }
+    return 0 ;
+}

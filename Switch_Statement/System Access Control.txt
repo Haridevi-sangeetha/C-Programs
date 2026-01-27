@@ -1,0 +1,24 @@
+
+#include<stdio.h>
+
+int main(){
+    int user;
+    scanf("%d",&user);
+    int login_time;
+    scanf("%d",&login_time);
+    switch(user){
+        case 1:
+           if(login_time>=20){
+            printf("Full Access");
+           }
+           break;
+        case 2:
+           if(login_time>=9 && login_time<=20){
+            printf("Limites Access");
+           }
+           else {
+            printf("Access denied");
+           }
+    }
+    return 0;
+}

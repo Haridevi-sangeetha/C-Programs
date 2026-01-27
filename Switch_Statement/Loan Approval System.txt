@@ -1,0 +1,27 @@
+
+#include<stdio.h>
+
+int main(){
+    int loan_type;
+    scanf("%d",&loan_type);
+    int credit_score;
+    scanf("%d",&credit_score);
+    switch(loan_type){
+        case 1:
+            if(credit_score>=700){
+                printf("Approved");
+            }
+            else if(credit_score>=650 && credit_score<=699){
+                printf("Mannual Review");
+            }
+            break;
+        case 2:
+            if(credit_score>=700){
+                printf("Approved");
+            }    
+            else if(credit_score<700){
+                printf("Rejected");
+            }
+        }
+        return 0; 
+    }

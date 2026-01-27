@@ -1,0 +1,19 @@
+
+#include<stdio.h>
+
+int main(){
+    int mark;
+    scanf("%d",&mark);
+    int attendence;
+    scanf("%d",&attendence);
+    if(mark>=75 && attendence>=75){
+        printf("Destination");
+    }
+    else if(attendence>=75 && (mark>=50 && mark<75)){
+        printf("Pass");
+    }
+    else if(mark<50 || attendence<75){
+        printf("Fail");
+    }
+    return 0 ;
+}

@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main(){
+    int del_type;
+    scanf("%d",&del_type);
+    int order_amout;
+    scanf("%d",&order_amout);
+    switch(del_type){
+        case 1:
+                printf("Delivery : 50");
+            break;
+        case 2 :
+            if(order_amout<1000){
+                printf("Delivery :100");
+            }
+            else if(order_amout>=1000){
+                printf("Delivery : Free");
+            }
+
+    }
+    return 0;
+}

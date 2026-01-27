@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main(){
+    int vehicle_type;
+    scanf("%d",&vehicle_type);
+    int parking_hours;
+    scanf("%d",&parking_hours);
+    // int bike = parking_hours*10;
+    // int car = parking_hours*20;
+    switch(vehicle_type){
+        case 1:
+            printf("%d",parking_hours*10);
+            break;
+        case 2:
+            printf("%d",parking_hours*20);
+            break;
+        default :
+            printf("%d",parking_hours*20);
+    }
+    return 0 ;
+}

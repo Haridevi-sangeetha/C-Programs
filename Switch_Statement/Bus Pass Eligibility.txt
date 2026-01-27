@@ -1,0 +1,28 @@
+
+#include<stdio.h>
+
+int main(){
+    int category;
+    scanf("%d",&category);
+    int dis_traveled;
+    scanf("%d",&dis_traveled);
+    switch(category){
+        case 1:
+            if(dis_traveled<=30){
+                printf("Eligible");
+            }
+            else if(dis_traveled>30){
+                printf("Eligible with Extra Fee");
+            }
+            break;
+        case 2:
+            if(dis_traveled<=30){
+                printf("Eligible");
+            }
+            else if(dis_traveled>30){
+                printf("Not Eligible");
+            }
+    
+    }
+    return 0;
+}

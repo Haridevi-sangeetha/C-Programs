@@ -1,0 +1,31 @@
+
+#include<stdio.h>
+
+int main(){
+    int vehicle_type;
+    scanf("%d",&vehicle_type);
+    int trip;
+    scanf("%d",&trip);
+    switch(vehicle_type){
+        case 1:
+           if(trip == 1){
+            printf("100");
+           }
+           else if(trip >=2 && trip<=10){
+            printf("Monthly Pass : 800");
+           }
+           else if(trip>10){
+            printf("Monthly Pass : 800");
+           }
+           break;
+        case 2:
+            if(trip == 1){
+                printf("240");
+            } 
+            else if(trip==5 || trip ==10){
+                int cal = trip*240;
+                printf("%d",cal);
+            }
+    }
+    return 0;
+}

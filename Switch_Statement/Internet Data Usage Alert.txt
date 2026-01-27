@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int main(){
+    int plan;
+    scanf("%d",&plan);
+    float Data;
+    scanf("%f",&Data);
+    switch(plan){
+        case 1:
+            if(Data<=1){
+                printf("Normal Speed");
+            }
+            else if(Data>1){
+                printf("Speed Reduced");
+            }
+            break;
+        case 2:
+            if(Data<=2){
+                printf("Normal Speed");
+            }
+            else{
+                printf("Extra Charges Needed");
+            }
+            break;
+    }
+    return 0;
+}

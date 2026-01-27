@@ -1,0 +1,23 @@
+
+#include<stdio.h>
+
+int main(){
+    char ch;
+    scanf("%c",&ch);
+    int room_type;
+    scanf("%d",&room_type);
+    switch(ch){
+        case 'A':
+            printf("2500");
+            break;
+        case 'B' :
+            printf("2000");
+            break;
+        case 'C':
+            printf("4000");
+            break;
+        case 'D':
+        printf("3000");
+    }
+    return 0;
+}

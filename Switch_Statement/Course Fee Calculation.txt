@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main(){
+     char r_s;
+    scanf("%c",&r_s);
+    int mode;
+    scanf("%d",&mode);
+    switch(mode){
+        case 1:
+            if(r_s=='R'){
+                printf("5000");
+            }
+            else {
+                printf("3000");
+            }
+            break;
+        case 2:
+            if(r_s=='r'){
+                printf("9000");
+            }
+            else{
+                printf("7000");
+            }
+    }
+    return 0;
+}
