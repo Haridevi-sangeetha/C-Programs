@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int binary;
+    scanf("%d",&binary);
+    int decimal = 0;
+    int result;
+
+    for(int i=0;binary!=0;++i){
+        result=binary%10;
+        decimal+=result*pow(2,i);
+        binary=binary/10;
+    }
+    printf("%d\n",decimal);
+    return 0;
+}
