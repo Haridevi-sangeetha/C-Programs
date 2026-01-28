@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int vehicleType, distance;
+    int farePerKm = 0, totalFare;
+
+    scanf("%d", &vehicleType);
+    scanf("%d", &distance);
+
+    switch (vehicleType) {
+        case 1:
+            farePerKm = 10;  
+            break;
+
+        case 2:
+            farePerKm = 15;   
+            break;
+
+        case 3:
+            farePerKm = 20;  
+            break;
+    }
+
+    totalFare = farePerKm * distance;
+    printf("Fare : %d", totalFare);
+
+    return 0;
+}

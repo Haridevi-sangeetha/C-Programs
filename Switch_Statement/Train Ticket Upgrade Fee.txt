@@ -1,0 +1,32 @@
+
+#include <stdio.h>
+
+int main() {
+    int classType;
+    int upgradeFee = 0;
+
+
+    scanf("%d", &classType);
+
+    switch (classType) {
+        case 1:   
+            upgradeFee = 300;
+            break;
+
+        case 2:   
+            upgradeFee = 800;
+            break;
+
+        case 3:   
+            upgradeFee = 1500;
+            break;
+
+        default:
+            printf("Invalid class type");
+
+    }
+
+    printf("Upgrade Fee : %d", upgradeFee);
+
+    return 0;
+}
