@@ -1,0 +1,21 @@
+
+
+#include<stdio.h>
+
+int main(){
+    int base;
+    scanf("%d",&base);
+    int power;
+    scanf("%d",&power);
+    int cal=1;
+    if(power>0){
+       for( int i=1;(i<=power);i++){
+        cal=cal*base;
+       }
+        printf("%d",cal);
+    }
+    else {
+        printf("1");
+    }
+    return 0;
+}

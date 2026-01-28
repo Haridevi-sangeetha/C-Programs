@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+    int num;
+    scanf("%d",&num);
+    int first=0;
+    int second=1;
+    for(int i=1;i<=num;i++){
+        printf("%d ",first);
+        int temp = first;
+        first=first+second;
+        second=temp;
+    }
+    return 0;
+}

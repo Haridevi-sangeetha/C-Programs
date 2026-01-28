@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(){
+    int m;
+    scanf("%d",&m);
+    int n;
+    scanf("%d",&n);
+    int count =0;
+    for(int i=m;i<=n;i++){
+        if(i%m==0){
+            count=count+i;
+        }
+    }
+    printf("%d",count);
+    return 0;
+}

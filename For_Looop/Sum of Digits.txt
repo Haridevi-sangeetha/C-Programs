@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+    int num;
+    scanf("%d",&num);
+    int sum =0;
+    for(;num!=0;){
+        int id= num%10;
+        sum = sum+id;
+        num = num/10;
+    }
+    printf("%d",sum);
+    return 0;
+}

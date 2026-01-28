@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main(){
+    int num;
+    scanf("%d",&num);
+    int temp=num;
+    int rev =0;
+    for(;num!=0;){
+        int id=num%10;
+        rev=(rev*10)+id;
+        num=num/10;
+    }
+    if(temp==rev){
+        printf("YES");
+    }
+    else{
+        printf("No");
+    }
+    return 0;
+}

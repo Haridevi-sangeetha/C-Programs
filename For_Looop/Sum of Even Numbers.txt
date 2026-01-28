@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+    int num;
+    scanf("%d",&num);
+    int sum_even = 0;
+    for(int i=1;i<=num;i++){
+        if(i%2==0){
+            sum_even= sum_even+i;
+        }
+    }
+    printf("%d",sum_even);
+    return 0;
+}
