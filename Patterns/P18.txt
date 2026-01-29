@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+    int num;
+    scanf("%d",&num);
+    char ch=65+num;
+    for(int i=1;i<=num;i++){
+        for(int j=i;j>0;j--){
+            printf("%c ",ch-j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
