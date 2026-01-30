@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int fuel,N,i=0,use,trips=0;
+    scanf("%d",&fuel);
+    scanf("%d",&N);
+
+    while(i<N){
+        scanf("%d",&use);
+        if(fuel >= use){
+            fuel -= use;
+            trips++;
+        }
+        else{
+            break;
+        }
+        i++;
+    }
+
+    printf("Completed Trips: %d\n",trips);
+    printf("Remaining Fuel: %d",fuel);
+    return 0;
+}

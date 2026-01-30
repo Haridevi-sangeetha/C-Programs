@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int N,i=0,h,total=0,burn=0;
+    scanf("%d",&N);
+
+    while(i<N){
+        scanf("%d",&h);
+        total += h;
+        if(h > 4) burn++;
+        i++;
+    }
+
+    printf("Total Overtime: %d\n",total);
+    printf("Burnout Days: %d",burn);
+    return 0;
+}

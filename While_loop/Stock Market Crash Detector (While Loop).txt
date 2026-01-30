@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+    int N,i=1,prev,curr;
+    int drop=0,cons=0,crash=-1;
+    scanf("%d",&N);
+    scanf("%d",&prev);
+
+    while(i<N){
+        scanf("%d",&curr);
+        if(curr < prev){
+            drop++;
+            cons++;
+            if(cons==3 && crash==-1)
+                crash = i+1;
+        } else cons=0;
+        prev = curr;
+        i++;
+    }
+
+    if(crash==-1)
+        printf("Crash Day: Not Detected\n");
+    else
+        printf("Crash Day: %d\n",crash);
+
+    printf("Total Drops: %d",drop);
+    return 0;
+}

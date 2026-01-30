@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+    int cash,N,i=0,w,count=0;
+    scanf("%d",&cash);
+    scanf("%d",&N);
+
+    while(i<N){
+        scanf("%d",&w);
+        if(cash >= w){
+            cash -= w;
+            count++;
+        } else break;
+        i++;
+    }
+
+    printf("Successful Withdrawals: %d\n",count);
+    printf("Remaining Cash: %d",cash);
+    return 0;
+}

@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+    int N, i=0, bal, trans, lowDays=0;
+    scanf("%d",&N);
+    scanf("%d",&bal);
+
+    while(i < N){
+        scanf("%d",&trans);
+        bal = bal + trans;
+        if(bal < 2000){
+            lowDays++;
+        }
+        i++;
+    }
+
+    printf("Final Balance: %d\n", bal);
+    printf("Low Balance Days: %d", lowDays);
+    return 0;
+}
