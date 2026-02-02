@@ -1,0 +1,33 @@
+
+#include<stdio.h>
+
+int main(){
+    int size,price;
+    printf("Enter the sizeof the array : ");
+    scanf("%d",&size);
+    printf("Enter the price : ");
+    scanf("%d",&price);
+    int arr[size];
+    for(int i=0;i<size;i++){
+        scanf("%d",&arr[i]);
+    }
+    int sum =0;
+    int count = 0;
+    for(int i=0;i<size;i++){
+       for(int j=i+1;j<size;j++){
+        sum = arr[i]+arr[j];
+        if(sum == price){
+            printf("i = %d j = %d sum = %d\n",arr[i],arr[j],sum);
+            count +=1;
+            break;
+        }
+       }
+       if(count == 1){
+        break;
+       }
+    }
+    if(count == 0){
+        printf("N0 Pair");
+    }
+    return 0;
+}

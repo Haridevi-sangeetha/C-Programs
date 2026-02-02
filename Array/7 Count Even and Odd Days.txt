@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main(){
+    int size;
+    scanf("%d",&size);
+    int arr[size];
+    int Even_count=0;
+    int Odd_count=0;
+    for(int i=0;i<size;i++){
+        scanf("%d",&arr[i]);
+        if(arr[i]%2==0){
+            Even_count+=1;
+        }
+        else{
+            Odd_count+=1;
+        }
+    }
+    printf("Even Count : %d\n",Even_count);
+    printf("Odd Count : %d",Odd_count);
+    return 0;
+}

@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main(){
+    int size;
+    scanf("%d",&size);
+    int arr[size];
+    for(int i=0;i<size-1;i++){
+        scanf("%d",&arr[i]);
+    }
+    int sum = 0;
+    int missing;
+    for(int i=0;i<(size-1);i++){
+        sum = sum+1;
+        if(arr[i] == sum){
+            // printf("there : %d\n",arr[i]);
+        }
+        else{
+            // printf("Not there : %d\n",sum);
+            missing = sum;
+            sum++;
+        }
+    }
+    printf("The Missing number is : %d",missing);
+    return 0;
+}
