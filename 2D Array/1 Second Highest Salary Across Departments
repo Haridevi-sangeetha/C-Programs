@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<limits.h>
+
+int main(){
+    int row,col;
+    printf("Enter the size of the row :");
+    scanf("%d",&row);
+    printf("Enter the size of the column : ");
+    scanf("%d",&col);
+    int arr[row][col];
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int max = arr[0][0];
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            if(arr[i][j]>max){
+                max = arr[i][j];
+            }
+        }
+    }
+    // printf("Highest Salary : %d\n",max);
+    int second_max = INT_MIN;
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            if(arr[i][j]>second_max && arr[i][j]<max){
+                second_max = arr[i][j];
+            }
+        }
+    }
+    printf("Second Highest salary : %d ",second_max);
+    return 0;
+}
