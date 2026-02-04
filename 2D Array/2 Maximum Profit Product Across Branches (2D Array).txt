@@ -1,0 +1,66 @@
+#include<stdio.h>
+#include<limits.h>
+#include<stdlib.h>
+
+int main(){
+    int row,col;
+    printf("Enter the Row Size : ");
+    scanf("%d",&row);
+    printf("Enter the col size : ");
+    scanf("%d",&col);
+    int arr[row][col];
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int first_max = arr[0][0];
+    int Negative_max = arr[0][0];
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            if(arr[i][j]>0){
+                if(arr[i][j]>first_max){
+                    first_max=arr[i][j];
+                }
+            }
+            if(arr[i][j]<0){
+                if(arr[i][j]<Negative_max){
+                    Negative_max=arr[i][j];
+                }
+            }
+        }
+    }
+    // printf("First Positive Largest : %d\n",first_max);
+    // printf("First Negative Largest : %d\n",Negative_max);
+
+    int second_max = INT_MIN;
+    int Negative_max2 = INT_MIN;
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            if(arr[i][j]>0){
+                if(arr[i][j]>second_max && arr[i][j]<first_max){
+                    second_max=arr[i][j];
+                }
+            }
+            if(arr[i][j]<0){
+                if(arr[i][j]>Negative_max2 && arr[i][j]>Negative_max){
+                    Negative_max2=arr[i][j];
+                }
+            }
+        }
+    }
+    // printf("First Positive Largest : %d\n",second_max);
+    // printf("First Negative Largest : %d\n",Negative_max2);
+
+
+    int Product1= abs(first_max*second_max);
+    int Product2= abs(Negative_max*Negative_max2);
+
+    if(Product1>Product2){
+        printf("%d",Product1);
+    }
+    else{
+        printf("%d",Product2);
+    }
+    return 0;
+}
