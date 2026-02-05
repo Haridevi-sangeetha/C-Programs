@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<limits.h>
+
+int main(){
+    int col,row;
+    scanf("%d %d",&row,&col);
+    int arr[row][col];
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int max=INT_MIN;
+    int min=INT_MAX;
+    int count=0;
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            if(arr[i][j]>max){
+                max=arr[i][j];
+            }
+            if(arr[i][j]<min){
+                min=arr[i][j];
+            }
+        }
+        int cal = (max-min);
+        if(1000<=cal){
+            count+=1;
+        }
+    }
+    printf("\n%d ",count);
+    return 0;
+}
