@@ -1,0 +1,32 @@
+
+#include<stdio.h>
+#include<limits.h>
+
+int main(){
+    int row,col;
+    scanf("%d %d",&row,&col);
+    int arr[row][col];
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int sum;
+    int max_sum=INT_MAX;
+    int avg;
+    for(int i=0;i<row;i++){
+        sum =0;
+        for(int j=0;j<col;j++){
+            sum=sum+arr[i][j];
+        }
+        if(sum<max_sum){
+            max_sum=sum;
+            avg=i;
+        }
+        // int avg=max_sum/col;
+        // printf("%d")        
+    }
+    printf("MIN_SUM : %d\n",max_sum);
+    printf("MIN_AVG : %d",avg);
+    return 0;
+}

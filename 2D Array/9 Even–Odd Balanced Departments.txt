@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main(){
+    int row,col;
+    scanf("%d %d",&row,&col);
+    int arr[row][col];
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int Even_count;
+    int Odd_count;
+    int count = 0;
+    for(int i=0;i<row;i++){
+        Even_count=0;
+        Odd_count=0;
+        for(int j=0;j<col;j++){
+            if(arr[i][j]%2==0){
+                Even_count+=1;
+            }
+            else{
+                Odd_count+=1;
+            }
+        }
+        if(Even_count==Odd_count){
+            count+=1;
+        }
+    }
+    printf("%d",count);
+    return 0;
+}
