@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+int main(){
+    int row,col;
+    scanf("%d %d",&row,&col);
+    int arr[row][col];
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int count;
+    int max_count=0;
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            int first=arr[i][j];
+            count=0;
+            for(int r=0;r<row;r++){
+                for(int c=0;c<col;c++){
+                    if(arr[i][j]==arr[r][c]){
+                        count+=1;
+                    }
+                    // printf("arr[i][j] : %d, arr[r][c] : %d , count : %d\n",arr[i][j],arr[r][c],count);
+                    if(count>max_count){
+                        max_count=count;
+                    }
+                }
+            }
+        }
+    }
+    printf("%d",max_count);
+    return 0;
+}
