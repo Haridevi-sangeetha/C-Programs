@@ -1,0 +1,37 @@
+
+#include<stdio.h>
+
+int main(){
+    int row,col;
+    scanf("%d %d",&row,&col);
+    int arr[row][col];
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int count;
+    int row_count;
+
+    int prime_row = 0;
+    for(int i=0;i<row;i++){
+        row_count = 0;
+        for(int j=0;j<col;j++){
+            int first = arr[i][j];
+            count =0;
+            for(int k=2;k<=first;k++){
+                if(first%k==0){
+                    count++;
+                }
+            }
+            if(count == 1){
+                row_count++;
+            }
+        }
+        if(row_count == col){
+            prime_row++;
+        }
+    }
+    printf("prime_row : %d",prime_row);
+    return 0;
+}
