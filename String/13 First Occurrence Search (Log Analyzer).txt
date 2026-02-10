@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+    char str[100];
+    fgets(str,sizeof(str),stdin);
+    int len = strlen(str);
+    char target;
+    scanf("%c",&target);
+    int result = 0;
+    int count =0;
+    for(int i=0;i<len;i++){
+        if(str[i] == target){
+            result =i;
+            count++;
+        }
+        if(count == 1){
+            break;
+        }
+    }
+    if(count == 0){
+        printf("-1");
+    }
+    else{
+        printf("%d",result);
+    }
+    return 0;
+}
