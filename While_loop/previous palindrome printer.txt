@@ -1,0 +1,24 @@
+
+#include<stdio.h>
+
+int main(){
+    int num,reverse,remainder,count;
+    scanf("%d",&num);
+
+    num = num-1;
+    while(1){
+        int original = num;
+        reverse = 0;
+        while(original!=0){
+            remainder = original%10;
+            reverse=(reverse*10)+remainder;
+            original = original/10;
+        }
+        if(reverse==num){
+            printf("%d ",reverse);
+            break;
+        }
+        num--;
+    }
+    return 0;
+}
