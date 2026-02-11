@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int area(){
+    int radius;
+    scanf("%d",&radius);
+    float cal = 3.14*radius*radius;
+    printf("%0.2f",cal);
+    return cal;
+}
+int main(){
+    area();
+    return 0;
+}
