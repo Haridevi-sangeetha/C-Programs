@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int Number_count(){
+    int num;
+    scanf("%d",&num);
+    int count=0;
+    for(;num!=0;){
+        int temp=num%10;
+        count++;
+        num=num/10;
+    }
+    return count;
+}
+
+int main(){
+    printf("%d",Number_count());
+    return 0;
+}
