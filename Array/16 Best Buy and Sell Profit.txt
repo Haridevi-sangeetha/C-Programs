@@ -13,7 +13,7 @@ int main()
     }
 
     int minPrice = price[0];
-    int maxProfit = price[1] - price[0];   // allow loss
+    int maxProfit = price[1] - price[0];  
 
     for(int i = 1; i < n; i++)
     {
@@ -32,4 +32,5 @@ int main()
 
     printf("%d", maxProfit);
     return 0;
+
 }
