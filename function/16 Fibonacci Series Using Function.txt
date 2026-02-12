@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int Fibonacci(){
+    int num;
+    scanf("%d",&num);
+    int first = 0;
+    int second = 1;
+
+    for(int i=0;i<num;i++){
+        printf("%d ",first);
+        int temp=first;
+        first=first+second;
+        second=temp;
+    }
+    return 0;
+}
+
+int main(){
+    Fibonacci();
+    return 0;
+}
