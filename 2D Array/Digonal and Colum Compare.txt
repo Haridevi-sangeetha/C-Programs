@@ -1,0 +1,47 @@
+#include<stdio.h>
+
+int main(){
+    int row,col;
+    scanf("%d %d",&row,&col);
+    int arr[row][col];
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            scanf("%d",&arr[i][j]);
+        }
+        printf("\n");
+    }
+    int d_sum = 0;
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            if(i==j){
+                d_sum=d_sum+arr[i][j];
+            }
+        }
+    }
+    printf("d_sum : %d\n",d_sum);
+    int d_sum1=0;
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            if((i+j)==col-1){
+                d_sum1=d_sum1+arr[i][j];
+            }
+        }
+    }
+    printf("d_sum1 : %d\n",d_sum1);
+    int d_count=d_sum+d_sum1;
+    printf("D_count : %d\n",d_count);
+
+    int count = 0;
+    int col_sum;
+    for(int j=0;j<col;j++){
+        col_sum=0;
+        for(int i=0;i<row;i++){
+            col_sum=col_sum+arr[i][j];
+        }
+        printf("col_sum : %d",col_sum);
+        if(col_sum>d_count){
+            count+=1;
+        }
+    }
+    printf("\ncount : %d",count);
+}
