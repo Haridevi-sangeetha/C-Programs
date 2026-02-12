@@ -1,0 +1,26 @@
+
+#include<stdio.h>
+
+void Amstrong(){
+    int num;
+    scanf("%d",&num);
+    int temp=num;
+    int sum=0;
+    for(;temp!=0;){
+        int id=temp%10;
+        int cube=id*id*id;
+        sum=sum+cube;
+        temp=temp/10;
+    }
+    if(sum==num){
+        printf("Amstrong");
+    }
+    else{
+        printf("Not Amstrong");
+    }
+}
+
+int main(){
+    Amstrong();
+    return 0;
+}
