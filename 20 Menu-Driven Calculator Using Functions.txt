@@ -1,0 +1,39 @@
+
+#include<stdio.h>
+
+int calculater(){
+    char ch;
+    scanf("%c",&ch);
+    int num1,num2,cal;
+    scanf("%d %d",&num1,&num2);
+    switch(ch){
+        case '+' :
+            cal = num1+num2;
+            return cal;
+            break;
+        case '-' :
+            cal = num1-num2;
+            return cal;
+            break ;
+        case '*' :
+            cal = num1*num2;
+            return cal;
+            break;
+        case '%' :
+            cal = num1%num2;
+            return cal;
+            break ;
+        case '/' :
+            cal = num1/num2;
+            return cal;
+            break;
+        default :
+             printf("Enter the Valid operation.");
+    }
+    return 0;
+}
+
+int main(){
+    printf("%d",calculater());
+    return 0;
+}
