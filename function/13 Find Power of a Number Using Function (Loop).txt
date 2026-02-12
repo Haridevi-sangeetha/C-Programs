@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+
+int Power(){
+    int base,power;
+    scanf("%d %d",&base,&power);
+    int cal = 1;
+    for(int i=1;i<=power;i++){
+        cal = cal*base;
+    }
+    return cal;
+}
+
+int main(){
+    printf("%d",Power());
+    return 0;
+}
