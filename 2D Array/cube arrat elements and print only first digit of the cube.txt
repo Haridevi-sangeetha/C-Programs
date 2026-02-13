@@ -1,0 +1,29 @@
+//cube arrat elements and print only first first digit of an array :                                   
+
+#include<stdio.h>
+
+int main(){
+    int size;
+    scanf("%d",&size);
+    int arr[size];
+    int arr1[size];
+    for(int i=0;i<size;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<size;i++){
+        int cube=arr[i]*arr[i]*arr[i];
+        printf("%d ",cube);
+        for(;cube!=0;){
+            int id=cube%10;
+            if(id>=1 && id<=9){
+                arr1[i]=id;
+            }
+            cube=cube/10;
+        }
+    }
+    printf("\n");
+    for(int i=0;i<size;i++){
+        printf("%d ",arr1[i]);
+    }
+    return 0;
+}
