@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+    int n,count=0;
+    scanf("%d",&n);
+    char arr[n][50];
+    for(int i=0;i<n;i++){
+        scanf("%s",arr[i]);
+    }
+    printf("[");
+    for(int i=0;i<n;i++){
+        printf("%s",arr[i]);
+        if(i<n-1){
+            printf(",");
+        }
+    }
+    printf("]");
+    for(int i=0;i<n;i++){
+        int valid=1;
+        if(strlen(arr[i])!=8){
+            valid=0;
+        }
+        for(int j=0;j<3&&valid;j++){
+            if(!((arr[i][j]>='A' &&arr[i][j]<='Z')||(arr[i][j]>='a' && arr[i][j]<='z'))){
+                valid=0;
+            }
+        }
+        for(int j=3;j<6&&valid;j++){
+            if(!(arr[i][j]>='0' &&arr[i][j]<='9')){
+                valid=0;
+            }
+        }
+        if(valid){
+            if(!((arr[i][6]=='I' && arr[i][7]=='N') || (arr[i][6]=='U' && arr[i][7] == 'S'))){
+                valid = 0;
+            }
+        }
+        if(valid){
+            count++;
+        }
+    }
+    printf("%d",count);
+}
