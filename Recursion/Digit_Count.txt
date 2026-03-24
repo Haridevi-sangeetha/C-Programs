@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int Digit_count(int a , int count){
+    if(a == 0){
+        return count ;
+    }
+    return Digit_count(a/10,count=count+1);
+}
+
+int main(){
+    int num,count =0;
+    scanf("%d",&num);
+    printf("%d",Digit_count(num,count));
+}
