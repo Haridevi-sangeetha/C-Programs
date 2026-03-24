@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int Reverse(int g,int rev){
+    if(g==0){
+        return rev;
+    }
+    return Reverse(g/10,rev*10+(g%10));
+}
+
+int main(){
+    int num;
+    scanf("%d",&num);
+    printf("%d",Reverse(num));
+}
