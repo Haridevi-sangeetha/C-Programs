@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int Palindrom(int a,int rev){
+    if(a==0){
+        return rev;
+    }
+    return Palindrom(a/10,(rev*10)+(a%10));
+}
+
+int main(){
+    int num,rev=0;
+    scanf("%d",&num);
+    
+    int result = Palindrom(num,rev);
+
+    if(result == num){
+        printf("Palindrom");
+    }
+    else{
+        printf("Not a Palindrome");
+    }
+}
