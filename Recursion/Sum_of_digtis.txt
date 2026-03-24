@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int Sum(int a){
+    if(a==0){
+        return 0;
+    }
+    return (a%10)+Sum(a/10);
+}
+
+int main(){
+    long long int num;
+    scanf("%lld",&num);
+    printf("%lld",Sum(num));
+}
